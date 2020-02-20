@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-<main>
 <header>
-<section class="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbarheader" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Warshawska Worckshop</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,30 +19,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Про нас</a>
+                    <a class="nav-link" href="#">Про нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Послуги</a>
+                    <a class="nav-link" href="#services">Послуги</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ціни</a>
+                    <a class="nav-link" href="#price">Ціни</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Зворотній звязок</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Контакти</a>
+                    <a class="nav-link" href="#contacts">Контакти</a>
                 </li>
             </ul>
         </div>
     </nav>
-    </section>
 </header>
+<main>
+<section id="services">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -82,7 +81,8 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <section class="serviseCards">
+</section>
+    <section id="price">
         <div class="card" style="width: 18rem;">
             <img src="img/polishingIcon.png" class="card-img-top" alt="polishing icon">
             <div class="card-body">
@@ -93,10 +93,7 @@
                 <li class="list-group-item">Позашляховик - 7000</li>
                 <li class="list-group-item">Мінівен - 10000</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+</div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/carwashIcon.png" class="card-img-top" alt="carwash icon">
@@ -108,25 +105,17 @@
                 <li class="list-group-item">Позашляховик - 400</li>
                 <li class="list-group-item">Мінівен - 600</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Нащі роботи</a>
-                <a href="#" class="card-link">Замовити</a>
-            </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/chemwashIcon.png" class="card-img-top" alt="chemwashIcon">
             <div class="card-body">
-                <h5 class="card-title">Хімчистка</h5>
+                <h5 class="card-title">Автомийка</h5>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Легкове авто - 1500</li>
                 <li class="list-group-item">Позашляховик - 2500</li>
                 <li class="list-group-item">Мінівен - 3000</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Наші роботи</a>
-                <a href="#" class="card-link">Замовити</a>
-            </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/toningAvtoIcon.jpg" class="card-img-top" alt="toningIcon">
@@ -138,53 +127,50 @@
                 <li class="list-group-item">Позашляховик - 1200</li>
                 <li class="list-group-item">Мінівен - 2500</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Наші роботи</a>
-                <a href="#" class="card-link">Замовити</a>
-            </div>
         </div>
     </section>
+    <form>
+            <input type="text" placeholder="Iм'я">
+            <br>
+            <input type="text" placeholder="Номер">
+            <br>
+            <textarea placeholder="Коментар"></textarea>
+            <br>
+            <input type="submit" value="Надіслати">
+        </form>
 </main>
 <footer>
-<footer>
-    <section class="contacticons" id="contacts">
-        <p>????????:</p>
-        <div>
-            <a href="#header">
-                <img src="img/WWlogowhite.jpg" alt="???? ????">
-            </a>
-        </div>
-        <div>
+    <section id="contacts">
+        <div class="upperContacts">
             <a href="https://www.facebook.com/warshawskaworkshop/photos/a.120206486027206/165553778159143/?type=3&theater">
-                <img src="img/facebooklogo.jpg" alt="???? ???????">
+                <img src="img/fasebookIcon.png" alt="Фейсбук">
             </a>
         </div>
-        <div>
+        <div class="upperContacts">
             <a href="https://www.instagram.com/warshawska_workshop/">
-                <img src="img/instagramlogo.png" alt="???? ??????????">
+                <img src="img/instagramIcon.png" alt="Інстаграм">
             </a>
         </div>
-        <div>
+        <div class="upperContacts">
             <a href=https://goo.gl/maps/QWMcLtV6hhuBuvfF8>
-                <img src="img/mapicon.png" alt="?????? ????">
+                <img src="img/mapIcon.png" alt="Знайти нас">
             </a>
         </div>
-        <div>
-            <img src="img/phoneicon2.jpg" alt="?????? ????????">
+    </div>
+        <div class="lowerContacts">
+            <img src="img/phoneIcon.jpg" alt="Контакні телефони">
             <p>0976624947, 0630455263</p>
         </div>
-        <div>
-            <img src="img/mail.png" alt="?????? ?????">
+        <div class="lowerContacts">
+            <img src="img/mailIcon.png" alt="Наша пошта">
             <p>warshawskaworkshop@gmail.com</p>
         </div>
-        <div>
-            <img src="img/clockicon.png" alt="?????? ????????">
+        <div class="lowerContacts">
+            <img src="img/clockIcon.png" alt="Години роботи">
             <p>09:00 - 18:00</p>
         </div>
     </section>
 </footer>
-</footer>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
